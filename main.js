@@ -46,21 +46,21 @@ function afficherTableau(){
 function getImage(valeur){   
     var imgTxt = "image/"; //variable avec tronc commun des images (ici, le dossier d'origine)
     switch(valeur){
-        case 1 : imgTxt += "elephant.png" //Choix de cette image si valeur emplacement tableau = 1
+        case 1 : imgTxt += "adaro.jpg" //Choix de cette image si valeur emplacement tableau = 1
         break;
-        case 2 : imgTxt += "giraffe.png" //Choix de cette image si valeur emplacement tableau = 2
+        case 2 : imgTxt += "echidna.jpg" //Choix de cette image si valeur emplacement tableau = 2
         break;
-        case 3 : imgTxt += "hippo.png" //Choix de cette image si valeur emplacement tableau = 3
+        case 3 : imgTxt += "faoladh.jpg" //Choix de cette image si valeur emplacement tableau = 3
         break;
-        case 4 : imgTxt += "monkey.png" //Choix de cette image si valeur emplacement tableau = 4
+        case 4 : imgTxt += "ijiraq.jpg" //Choix de cette image si valeur emplacement tableau = 4
         break;
-        case 5 : imgTxt += "panda.png" //Choix de cette image si valeur emplacement tableau = 5
+        case 5 : imgTxt += "jorogumo.jpg" //Choix de cette image si valeur emplacement tableau = 5
         break;
-        case 6 : imgTxt += "parrot.png" //Choix de cette image si valeur emplacement tableau = 6
+        case 6 : imgTxt += "kappa.jpg" //Choix de cette image si valeur emplacement tableau = 6
         break;
-        case 7 : imgTxt += "penguin.png" //Choix de cette image si valeur emplacement tableau = 7
+        case 7 : imgTxt += "minotaur.jpg" //Choix de cette image si valeur emplacement tableau = 7
         break;
-        case 8 : imgTxt += "pig.png" //Choix de cette image si valeur emplacement tableau = 8
+        case 8 : imgTxt += "quetzalcoatl.jpg" //Choix de cette image si valeur emplacement tableau = 8
         break;
         default : console.log("cas non pris en compte") //rapport dans la console en cas d'erreur
     }
@@ -116,7 +116,7 @@ function genereTableauAleatoire(){
                 ligne.push(randomImage+1); //Ajoute des lignes aux valeurs des images, passant de 1 à 8
                 nbImagePosition[randomImage]++; //Incrémente tant qu'on en a pas 2 de chaque
                 fin = true; //Sors de la boucle quand on en a 2 de chaques
-                
+
                 }
             }
         }

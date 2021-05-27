@@ -1,8 +1,23 @@
+body{
+    background-image: url(./image/Fond-Jeu-Memoire-JS.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 button{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+}
+@media (max-width: 768px){
+    button{
+        width: 100px;
+        height: 100px;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
 }
