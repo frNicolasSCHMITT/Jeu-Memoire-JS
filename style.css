@@ -2,6 +2,8 @@ body{
     background-image: url(./image/Fond-Jeu-Memoire-JS.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 .btn-primary{
     width: 200px;
@@ -14,7 +16,7 @@ body{
     font-weight: bold;
 }
 .btn-primary:hover{
-    background-color:saddlebrown;
+    background-color:gray;
 }
 img{
     width: 200px;

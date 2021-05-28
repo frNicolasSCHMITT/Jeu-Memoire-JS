@@ -73,7 +73,9 @@ function verif(bouton){
     if(ready){  //si timer ok :
             
         nbAffiche++; //incrémente à chaque click
-
+// rôle de substr = découpe une string (chaine de caractères) et bouton = paramètre de fonction verif()
+// 1 paramètre = position du début de la découpe
+// 2e paramètre = nombre de caractères que l'on conserve
         var ligne = bouton.substr(0,1);  //transforme le "string" en position ligne
         var colonne = bouton.substr(2,1);  //transforme le "string" en position colonne
         tabJeu[ligne][colonne] = tabResultat[ligne][colonne];  // attribue les valeurs de tabResultat à tabJeu lors du click
@@ -112,8 +114,8 @@ function genereTableauAleatoire(){
             var fin = false;
             while(!fin){  //Boucle pour générer les img aléa, 2 de chaque sorte
                 var randomImage = Math.floor(Math.random() * 8);  //génère aléatoirement des chiffres entiers(floor) de 0 à 7, avec un +1 ensuite devenant 1 à 8
-                if(nbImagePosition[randomImage] < 2){  //Pour éviter d'avoir plus de 2 fois la même image
-                ligne.push(randomImage+1); //Ajoute des lignes aux valeurs des images, passant de 1 à 8
+                if(nbImagePosition[randomImage] < 2){  //Génère les valeurs aléatoires supplémentaires tant qu'on en a pas 2 de chaque.
+                ligne.push(randomImage+1); //Ajoute +1 aux valeurs des images, passant de 1 à 8
                 nbImagePosition[randomImage]++; //Incrémente tant qu'on en a pas 2 de chaque
                 fin = true; //Sors de la boucle quand on en a 2 de chaques
 
