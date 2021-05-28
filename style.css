@@ -3,18 +3,34 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-button{
+.btn-primary{
     width: 200px;
     height: 200px;
+    background-image: url(./image/bg_cartes.png);
+    background-color: beige;
+    background-size: cover;
+    color: black;
+    border: black;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color:saddlebrown;
 }
 img{
     width: 200px;
     height: 200px;
 }
+footer, header{
+    text-align: center;
+}
+footer > p > a{
+    color: black;
+}
 @media (max-width: 768px){
-    button{
+    .btn-primary{
         width: 100px;
         height: 100px;
+        color: transparent;
     }
     img{
         width: 100px;
